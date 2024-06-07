@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TimeBase</string>
+    <string name="hello">Сделайте свой выбор</string>
+    <string name="fragment1">Fragment 1</string>
+    <string name="Timer">Timer</string>
+    <string name="Calc">Calc</string>
+    <string name="start_timer">timer</string>
+    <string name="start_calc">calc</string>
+    <string name="start_time">Start</string>
+    <string name="stop_time">Stop</string>
+    <string name="pause_time">Pause</string>
+    <string name="default_time">00:00:00</string>
+    <string name="btn1">1</string>
+    <string name="btn2">2</string>
+    <string name="btn3">3</string>
+    <string name="btn4">4</string>
+    <string name="btn5">5</string>
+    <string name="btn6">6</string>
+    <string name="btn7">7</string>
+    <string name="btn8">8</string>
+    <string name="btn9">9</string>
+    <string name="btn0">0</string>
+    <string name="btn_tochka">.</string>
+    <string name="result">=</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="division">/</string>
+    <string name="um">*</string>
+</resources>

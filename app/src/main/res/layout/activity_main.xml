@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentational.activity.MainActivity">
+
+    <data>
+        <variable
+            name="event"
+            type="com.example.timebase.presentational.activity.IMainPresenter.EventListener"/>
+        <variable
+            name="view"
+            type="com.example.timebase.presentational.activity.IMainPresenter.View" />
+    </data>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@android:color/holo_blue_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/btnBack"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:onClick="@{()->view.backStack()}"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/backspace_black" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvAppBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@android:color/background_dark"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                tools:text="calc"/>
+        </LinearLayout>
+
+        <include
+            layout="@layout/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </android.support.constraint.ConstraintLayout>
+</layout>
